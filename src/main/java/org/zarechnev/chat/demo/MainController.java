@@ -1,6 +1,5 @@
 package org.zarechnev.chat.demo;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,11 +15,11 @@ public class MainController {
         return "index.html";
     }
 
-    public String myMethod(ChatMessageRepository msgRepo){
-        ChatMessage chatMessage = new ChatMessage("ewrwer", "asdasd");
-        msgRepo.save(chatMessage);
-        System.out.println(chatMessage);
-        return chatMessage.toString();
+    public void myMethod(ChatMessageRepository msgRepo){
+        msgRepo.save(new ChatMessage("DFsdf234234", "#$%#$ergfdfgdfg"));
+        for (ChatMessage message : msgRepo.findAll()) {
+            System.out.println(message.toString());
+        }
     }
 
     /*
