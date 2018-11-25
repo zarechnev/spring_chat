@@ -1,4 +1,8 @@
-+) setup inmemoryDB
++) setup in-memory DB
 +) show empty web-template
--) login-page
--) show chat
++) show chat page template
+-) setup chat message DB model
+-) setup backend API (return all messages)
+-) setup backend API (add message)
+-) setup frontend API (get all messages)
+-) setup frontend API (send message)

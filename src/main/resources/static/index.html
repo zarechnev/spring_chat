@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sp. Chat</title>
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+        <body>
+            <div class="grid-container">
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-12 cell">
+                        <h1>Java Spring Chat</h1>
+                    </div>
+                </div>
+
+                <div class="grid-x grid-padding-x">
+                    <div class="large-12 cell">
+                        <div id="chat" class="callout">
+                            CHAT
+                        </div>
+                    </div>
+                </div>
+
+                <form>
+                    <div class="grid-x">
+                        <div class="large-4 medium-4 cell">
+                            <input id="user_name" type="text" placeholder="Your name?" />
+                        </div>
+                    </div>
+
+                    <div class="grid-x">
+                        <div class="large-12 cell">
+                            <textarea id="user_message" placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+
+                    <button id="send_msg_button" type="button" class="button">Send Message</button>
+                </form>
+
+            </div>
+
+            <script src="js/vendor/jquery.js"></script>
+            <script src="js/vendor/what-input.js"></script>
+            <script src="js/vendor/foundation.js"></script>
+            <script src="js/app.js"></script>
+        </body>
+</html>

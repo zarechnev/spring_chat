@@ -7,9 +7,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class MainController {
+    /*
+    Main WEB-Page.
+     */
     @RequestMapping("/")
-    public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+    public String main() {
+        return "index.html";
+    }
+
+    /*
+    Foundation template for HTML Markup.
+     */
+    @RequestMapping("/foundation")
+    public String foundation() {
+        return "foundation.html";
+    }
+
+    @RequestMapping("/add_message")
+    public String add_message(@RequestParam(name="name", required=false, defaultValue="Anonymous") String name,
+                              @RequestParam(name="message") String message,
+                              Model model) {
         model.addAttribute("name", name);
-        return "hello.html";
+        return "index.html";
     }
 }
