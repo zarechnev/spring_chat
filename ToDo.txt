@@ -1,3 +1,4 @@
-1) отобразить шаблон веб-страницы
-2) реализовать учёт введённого имени пользователя
-3) 
++) setup inmemoryDB
++) show empty web-template
+-) login-page
+-) show chat
