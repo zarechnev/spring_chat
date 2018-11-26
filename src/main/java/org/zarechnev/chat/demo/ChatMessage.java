@@ -27,6 +27,6 @@ public class ChatMessage {
 
     @Override
     public String toString(){
-        return String.format("%s: %s", this.userName, this.userName);
+        return String.format("%s: %s", this.userName, this.message);
     }
 }
