@@ -1,8 +1,10 @@
 +) setup in-memory DB
 +) show empty web-template
 +) show chat page template
--) setup chat message DB model
--) setup backend API (return all messages)
--) setup backend API (add message)
--) setup frontend API (get all messages)
--) setup frontend API (send message)
++) setup chat message DB model
++) setup backend API (return all messages)
++) setup backend API (add message)
++) setup frontend API (get all messages)
++) setup frontend API (send message)
+-) make build and run script
+-) make Docker-container
