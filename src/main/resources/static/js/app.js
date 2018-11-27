@@ -12,6 +12,8 @@ function addMsg() {
         .done(function() {
             getMessages();
         });
+
+    $("#user_message").val("");
 }
 
 $("#send_msg_button").click(function() {

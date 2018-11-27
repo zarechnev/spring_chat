@@ -6,5 +6,5 @@
 +) setup backend API (add message)
 +) setup frontend API (get all messages)
 +) setup frontend API (send message)
--) make build and run script
--) make Docker-container
++) make build_and_run script
+-) make Docker-file
