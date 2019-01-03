@@ -1,6 +1,5 @@
-package org.zarechnev.chat.demo;
+package org.zarechnev.chat;
 
-import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ChatMessageRepository extends CrudRepository<ChatMessage, Long> {

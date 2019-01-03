@@ -1,4 +1,4 @@
-package org.zarechnev.chat.demo;
+package org.zarechnev.chat;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

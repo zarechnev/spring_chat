@@ -1,4 +1,4 @@
-package org.zarechnev.chat.demo;
+package org.zarechnev.chat;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,20 +11,20 @@ public class MainController {
     @Autowired
     ChatMessageRepository msgRepo;
 
-    /*
-    Main WEB-Page.
+    /**
+     * Main WEB-Page.
     */
     @RequestMapping("/")
     public String main() {
         return "index.html";
     }
 
-    /*
-    Return all messages in HTML-format.
+    /**
+     * Return all messages in HTML-format.
      */
     @ResponseBody
     @RequestMapping("/get_messages")
-    public String myMethod(){
+    public String getMessagesInHTML(){
         String response = "";
         for (ChatMessage message : msgRepo.findAll()){
             response += message.toString();
@@ -33,16 +33,16 @@ public class MainController {
         return response;
     }
 
-    /*
-    Foundation template for HTML markup.
+    /**
+     * Foundation template for HTML markup.
      */
     @RequestMapping("/foundation")
     public String foundation() {
         return "foundation.html";
     }
 
-    /*
-    Add message.
+    /**
+     * Add message.
      */
     @ResponseBody
     @RequestMapping("/add_message")

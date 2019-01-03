@@ -1,4 +1,4 @@
-package org.zarechnev.chat.demo;
+package org.zarechnev.chat;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
